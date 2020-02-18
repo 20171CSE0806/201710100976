@@ -1,0 +1,28 @@
+h1
+{
+	color:#e0f017;
+	margin-left:50px;
+}
+body
+{
+	background-color:#def5f1;
+	background-image: url("/home/Sem6B12/Downloads/heelo.jpeg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+ 	background-size: 1900px 1000px;
+}
+#key
+{
+	color: #f40f21;
+	font-size:50px;
+	font-style: italic;
+	margin-left:80px;
+	font-size: 80px;
+	text-transform:capitalize;
+	
+}
+caption
+{
+	text-decoration:overline;
+}
+

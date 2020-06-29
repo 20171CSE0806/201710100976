@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>JOB SEEKER</title>
+        <link rel = "icon" href ="https://www.bing.com/images/blob?bcid=S8tfUbQnz.cASQ" type = "image/x-icon"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body class="jumbotron text-box">
+            
+        <style>
+            div
+            {
+                color:#2F4858;
+               position: absolute;
+               bottom: 10%;
+               left: 37%;
+               width: 25%;
+               height:70%;
+            }
+            #em[type=email]
+            {
+                margin-left:20%;
+                position: absolute;
+                bottom:60%;
+                border-radius: 10px; 
+                width:70%;
+                height: 8%;
+                border: none;
+            }
+            #ps[type=password]
+            {
+                margin-left:20%;
+                position: absolute;
+                bottom:50%;
+                border-radius:10px;
+                height: 8%; 
+                width:70%;
+                border: none;
+            }
+            #si
+            {
+                margin-left:20%;
+                position: absolute;
+                bottom:39%;
+                height:8%; 
+                width:70%;
+                border-radius:10px;
+                border: none;
+                color: ghostwhite;
+                background-color:#5AD0E4;
+            }
+            body
+            {
+                color: rgb(34, 34, 34);
+                background-image: url('http://climb.pcc.edu/hs-fs/hubfs/Blog_Photos/top-skills-employers-look-for.jpg?width=639&name=top-skills-employers-look-for.jpg');
+                background-size: 1400px 660px;
+              
+            }
+            #LO
+            {
+                margin-left:22%;
+                position: absolute;
+                bottom:65%;
+                border-radius: 3.5px;
+            }
+        </style>
+        <div class=.container>
+            
+              <centre><img src="https://www.bing.com/images/blob?bcid=S8tfUbQnz.cASQ" style=" width: 40%; margin-left: 33%;"></centre><br>
+                <input id="em"  type="email" onerror="a()" name="email" placeholder="&nbsp;&nbsp;Email"><br>
+                <p id="yo"></p><br>
+                <input id="ps" type="password" name="password" placeholder="&nbsp;&nbsp;Password"><br>
+                <p id="yo"></p><br>
+                <button id="si" onclick="login()">LOGIN NOW</button><br><br>
+                <h6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you are not registered,please<a href="file:///C:/Users/KULWANT/Desktop/Web%20Pages/Register.html" style=" color:#FC1E2F;"> click here</a></h6>
+        </div>
+        <script>
+            function login()
+            {
+                localStorage.setItem("email", "dhimanatul0@gmail.com");
+                localStorage.setItem("password", "Kulmanju03");
+    
+                var dummyUser= document.getElementById("em").value;
+                var dummyPass= document.getElementById("ps").value;
+    
+                if (dummyPass==""|| dummyUser=="")
+                {
+                    alert("please enter a valid user name and password!");
+    
+                }
+                else if(dummyUser!=localStorage.getItem("email") && dummyPass!=localStorage.getItem("password"))
+                {
+                alert("credential mismatch, access denied");
+                }
+                else if(dummyUser==localStorage.getItem("email"))
+                {
+                    alert("access granted");
+                    window.location.href="file:///C:/Users/KULWANT/Desktop/Web%20Pages/JOB%20page.html"
+    
+                }
+    
+            }
+    </script>
+        <h6>
+            </h6>
+    </body>
+    </html>
